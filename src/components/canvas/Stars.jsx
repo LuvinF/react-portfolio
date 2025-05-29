@@ -40,7 +40,6 @@ const StarsCanvas = () => {
         shadows
         dpr={[1, 2]} // Set device pixel ratio for better quality
         gl={{ antialias: true }} // Antialiasing for smoother rendering
-        frameloop="demand" // Optimize by reducing the number of frames per second
       >
         <Suspense fallback={<div>Loading...</div>}>
           <Stars />
