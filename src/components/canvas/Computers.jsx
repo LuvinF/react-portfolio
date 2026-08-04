@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState, useMemo, memo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import CanvasLoader from "../Loader";
+import CanvasLoader from "../home/Loader";
 
 // ✅ 3D Model Component (with useMemo for GLTF)
 const ComputersModel = ({ isMobile }) => {

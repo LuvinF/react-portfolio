@@ -2,7 +2,7 @@
 import React, { memo, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
-import CanvasLoader from "../Loader";
+import CanvasLoader from "../home/Loader";
 
 // Memoize Ball component to prevent re-rendering
 const Ball = memo((props) => {

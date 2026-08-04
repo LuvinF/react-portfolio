@@ -1,13 +1,13 @@
 import React, { useState, useCallback, useRef, Suspense } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { styles } from "../../styles";
+import { SectionWrapper } from "../../hoc";
+import { slideIn } from "../../utils/motion";
 import DOMPurify from "dompurify";
 
 // Lazy load EarthCanvas component with a default fallback
-const EarthCanvas = React.lazy(() => import("./canvas/Earth"));
+const EarthCanvas = React.lazy(() => import("../canvas/Earth"));
 
 const Contact = () => {
   const formRef = useRef();
@@ -89,7 +89,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

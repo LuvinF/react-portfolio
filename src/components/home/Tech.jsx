@@ -1,10 +1,10 @@
 // Tech.js
 import React, { lazy, Suspense, memo } from "react";
-import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
+import { SectionWrapper } from "../../hoc";
+import { technologies } from "../../constants";
 
 // Lazy-load the BallCanvas component
-const BallCanvas = lazy(() => import("./canvas/Ball"));
+const BallCanvas = lazy(() => import("../canvas/Ball"));
 
 // Import IntersectionObserver hook
 import { useInView } from "react-intersection-observer";

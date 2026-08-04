@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import { ReactTyped } from "react-typed";
 import { lazy, useEffect, useState, Suspense } from "react";
 
 // Lazy load ComputersCanvas
-const ComputersCanvas = lazy(() => import('./canvas/Computers'));
+const ComputersCanvas = lazy(() => import('../canvas/Computers'));
 
 const Hero = () => {
   const [showCanvas, setShowCanvas] = useState(false);
@@ -37,7 +37,7 @@ const Hero = () => {
               <ReactTyped
                 strings={[
                   "React Developer",
-                  "Web Application Developer",
+                  "AI Product Engineer",
                   "React Native Developer",
                   "Project Manager"
                 ]}
