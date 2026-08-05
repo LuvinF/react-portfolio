@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 
 const Services = lazy(() => import("../pages/Services"));
+const RequestQuote = lazy(() => import("../pages/RequestQuote"));
 
 export const router = createBrowserRouter(
   [
@@ -20,6 +21,10 @@ export const router = createBrowserRouter(
         {
           path: "services",
           element: <Services />,
+        },
+        {
+          path: "services/request-quote",
+          element: <RequestQuote />,
         },
         {
           path: "*",

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { pricing } from "../../constants/pricing";
 import useCurrency from "../../hooks/useCurrency";
 import usePricing from "../../hooks/usePricing";
@@ -7,13 +9,20 @@ const PricingCard = ({ item }) => {
   const { formattedPrice } = usePricing(item.priceUSD);
 
   return (
-    <article className="rounded-2xl border border-white/10 bg-black-100 p-7">
+    <article className="flex flex-col rounded-2xl border border-white/10 bg-black-100 p-7">
       <h3 className="text-xl font-bold text-white">{item.title}</h3>
       <p className="mt-3 leading-7 text-secondary">{item.description}</p>
       <p className="mt-8 text-sm font-medium uppercase tracking-wider text-secondary">
         Starting From
       </p>
       <p className="mt-2 text-3xl font-black text-white">{formattedPrice}</p>
+      <Link
+        to={`/services/request-quote?service=${item.id}`}
+        className="mt-8 inline-flex w-full items-center justify-center rounded-lg bg-tertiary px-6 py-3 font-semibold text-white transition hover:bg-[#2b1d62] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#915eff]"
+        aria-label={`Request a quote for ${item.title}`}
+      >
+        Request a Quote
+      </Link>
     </article>
   );
 };
