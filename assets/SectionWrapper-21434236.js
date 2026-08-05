@@ -1,0 +1,1 @@
+import{b as n,m as t,c as i,j as a}from"./index-f9884b97.js";import{s as r}from"./motion-a4ba23c6.js";const o=(s,e)=>function(){return n(t.section,{variants:r(),initial:"hidden",whileInView:"show",viewport:{once:!0,amount:.25},className:`${i.padding} max-w-7xl mx-auto relative z-0`,children:[a("span",{className:"hash-span",id:e,children:" "}),a(s,{})]})},l=o;export{l as S};
